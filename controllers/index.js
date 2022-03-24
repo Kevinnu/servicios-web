@@ -37,8 +37,8 @@ class Container {
                     console.log('Archivo vacio');
                 } else {
                     let arrJson = JSON.parse(leer);
-                    let elemnts = arrJson.length - 1;
-                    let numRand = random.int((0), (elemnts));
+                    let elemnts = arrJson.length;
+                    let numRand = random.int((1), (elemnts));
                     const busqueda = arrJson.find(element => element.id == numRand);
                     return busqueda;
                 }
